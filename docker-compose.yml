@@ -8,11 +8,10 @@ services:
       - default
 
   web:
-    image: beeman/static-server:latest
-    volumes:
-      - ./web/dist:/workspace/app:ro
-    environment:
-      - SPA=true
+    build:
+      context: ./web
+      args:
+        VITE_API_URL: https://ascii-api.colmena.dev
     networks:
       - dokploy-network
       - default

@@ -1,5 +1,6 @@
 services:
   api:
+    restart: unless-stopped
     build: ./api
     environment:
       - PORT=3001
@@ -8,6 +9,7 @@ services:
       - default
 
   web:
+    restart: unless-stopped
     build:
       context: ./web
       args:

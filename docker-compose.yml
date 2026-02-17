@@ -1,0 +1,22 @@
+services:
+  api:
+    build: ./api
+    environment:
+      - PORT=3001
+    networks:
+      - dokploy-network
+      - default
+
+  web:
+    image: beeman/static-server:latest
+    volumes:
+      - ./web/dist:/workspace/app:ro
+    environment:
+      - SPA=true
+    networks:
+      - dokploy-network
+      - default
+
+networks:
+  dokploy-network:
+    external: true

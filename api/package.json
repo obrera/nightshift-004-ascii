@@ -1,0 +1,16 @@
+{
+  "name": "ascii-api",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run src/index.ts"
+  },
+  "dependencies": {
+    "hono": "^4.7.0",
+    "figlet": "^1.8.0"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.7.0"
+  }
+}

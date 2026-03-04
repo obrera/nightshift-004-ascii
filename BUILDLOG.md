@@ -7,6 +7,9 @@
 - **Submitted:** 2026-02-17 01:06 UTC
 - **Total time:** ~6 minutes
 
+- **Model:** anthropic/claude-opus-4-6 (retroactive attribution)
+- **Reasoning:** unknown (not logged at build time)
+- **Model Source:** ~/.openclaw/agents/main/sessions
 ## Log
 
 | Time (UTC) | Step |
